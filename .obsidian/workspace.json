@@ -13,19 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3.md",
+                "file": "algorithms/Analysis of Algorithms/2 Need for analysis.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "59be0fb4246bff86",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110184848.png"
               }
             }
           }
@@ -95,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3.md",
+                "file": "algorithms/Analysis of Algorithms/2 Need for analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3.md",
+                "file": "algorithms/Analysis of Algorithms/2 Need for analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3.md"
+                "file": "algorithms/Analysis of Algorithms/2 Need for analysis.md"
               }
             }
           }
@@ -158,13 +148,15 @@
   },
   "active": "5192e92c987b4fae",
   "lastOpenFiles": [
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110191236.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110184848.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110191529.png",
+    "algorithms/Analysis of Algorithms/1 Analysis of algorithms.md",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110191508.png",
     "algorithms/Analysis of Algorithms/3.md",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110184848.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110191236.png",
     "algorithms/Analysis of Algorithms/2 Need for analysis.md",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110183005.png",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110103505.png",
-    "algorithms/Analysis of Algorithms/1 Analysis of algorithms.md",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231109214235.png",
     "algorithms/Analysis of Algorithms/_resources",
     "algorithms/2.md",

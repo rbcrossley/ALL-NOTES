@@ -38,7 +38,7 @@ for measuring algorithm running time.
 4) approach
 or notation to characterize running time.
 ## RAM Model of Computation
-![[Pasted image 20231110183005.png]]
+![](_resources/Pasted%20image%2020231110191529.png)
 Here in this processor, each basic operation takes exactly 1 unit of time.
 ## Algorithm
 ```
@@ -68,7 +68,7 @@ i<=n => n+1
 i++ => n
 
 j=1 =>$n$
-j<=$n$ =>n(n+1)
+j<=n =>n(n+1)
 j++ => $n^2$
 
 Just multiplied everything with n in nested loop case.
@@ -76,4 +76,4 @@ Just multiplied everything with n in nested loop case.
 k=k * m =>$n^2$ +$n^2$
 Total time for the second loop=4$n^2$+4$n$+2
 
-Thus final time required for entire algorithm=$$2+(4n+1)+4n^2+4n+2=4n^2+8n+6$$
+Thus final time required for entire algorithm=$2+(4n+1)+4n^2+4n+2=4n^2+8n+6$
