@@ -11,11 +11,26 @@
             "id": "5192e92c987b4fae",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "algorithms/Analysis of Algorithms/3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "59be0fb4246bff86",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110184848.png"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3.md",
+                "file": "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110184848.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3.md",
+                "file": "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110184848.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3.md"
+                "file": "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110184848.png"
               }
             }
           }
@@ -142,10 +157,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1457ca351885e79",
+  "active": "59be0fb4246bff86",
   "lastOpenFiles": [
-    "algorithms/Analysis of Algorithms/2 Need for analysis.md",
     "algorithms/Analysis of Algorithms/3.md",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110184848.png",
+    "algorithms/Analysis of Algorithms/2 Need for analysis.md",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110183005.png",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110103505.png",
     "algorithms/Analysis of Algorithms/1 Analysis of algorithms.md",
