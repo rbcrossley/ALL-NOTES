@@ -79,3 +79,5 @@ k=k * m => $n^2$ + $n^2$
 Total time for the second loop=4 $n^2$ +4 $n$ +2
 
 Thus final time required for entire algorithm= $2+(4n+1)+4n^2+4n+2=4n^2+8n+6$
+
+This is also called as step count method.
