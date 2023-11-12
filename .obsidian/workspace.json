@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0e6a15d30464602c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "algorithms/Analysis of Algorithms/4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3 Order of magnitude method.md",
+                "file": "algorithms/Analysis of Algorithms/4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3 Order of magnitude method.md",
+                "file": "algorithms/Analysis of Algorithms/4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,11 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/3 Order of magnitude method.md"
+                "file": "algorithms/Analysis of Algorithms/4.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -146,18 +160,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5192e92c987b4fae",
+  "active": "0e6a15d30464602c",
   "lastOpenFiles": [
+    "dockernotes/Docker Blog/01Introduction to Docker.md",
+    "dockernotes/Docker/01Introduction to Docker.md",
+    "dockernotes/Docker/2 Image Creation, Management and Registry.md",
+    "dockernotes/Docker",
+    "dockernotes/_resources/064f343be380b52134c884be00aeece8.png",
+    "dockernotes/_resources/74d2713f9dbba2b4ace828c699493496.png",
+    "dockernotes/_resources/0f7091ee4f6e2d61effc7d280abe7f5b.png",
+    "dockernotes/_resources/6021360c752cde5f8dcb640d98857c6f.png",
+    "dockernotes/_resources/20016641684182a1aead4a937949c69f.png",
+    "dockernotes/_resources/e9dce623ae87fe8be121132361fd25e9.png",
+    "dockernotes/_resources/3593c1ac594781c56921e4f999b9feb5.png",
+    "dockernotes/_resources/a141554260c7bf9cc9e51147bf01fd92.png",
+    "dockernotes/_resources/6e2b1c3fadd9e04b2b3e9d2ff8b8190d.png",
+    "dockernotes/_resources/d2e459a72758d31162356b232bf5fd05.png",
+    "algorithms/Analysis of Algorithms/4.md",
+    "algorithms/Analysis of Algorithms/3 Order of magnitude method.md",
     "algorithms/Analysis of Algorithms/2 Need for analysis.md",
     "algorithms/Analysis of Algorithms/1 Analysis of algorithms.md",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110191529.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110191508.png",
-    "algorithms/Analysis of Algorithms/3 Order of magnitude method.md",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110184848.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110191236.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110183005.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231110103505.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231109214235.png",
     "algorithms/Analysis of Algorithms/_resources",
     "algorithms/2.md",
     "algorithms/1 Introduction to Algorithms.md",
@@ -171,12 +193,10 @@
     "web security/Content Flow.md",
     "New Text Document.txt",
     "blog/Linux Commands that I use almost regularly.md",
-    "blog/_resources/Pasted image 20231108220935.png",
     "blog/_resources",
     "web security/_resources",
     "blog",
     "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/web security 1.md",
-    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/1 email and linux.md",
-    "web security"
+    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/1 email and linux.md"
   ]
 }
