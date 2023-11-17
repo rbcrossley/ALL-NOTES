@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dbms/query language/1.md",
+                "file": "algorithms/Analysis of Algorithms/7.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dbms/query language/1.md",
+                "file": "algorithms/Analysis of Algorithms/7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dbms/query language/1.md",
+                "file": "algorithms/Analysis of Algorithms/7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dbms/query language/1.md"
+                "file": "algorithms/Analysis of Algorithms/7.md"
               }
             }
           }
@@ -149,27 +149,29 @@
   },
   "active": "5192e92c987b4fae",
   "lastOpenFiles": [
-    "dbms/query language/_resources/Pasted image 20231114175246.png",
-    "dbms/query language/_resources/Pasted image 20231114175226.png",
-    "dbms/query language/_resources/Pasted image 20231114175158.png",
-    "dbms/query language/_resources/Pasted image 20231114175140.png",
-    "dbms/query language/_resources/Pasted image 20231114175119.png",
-    "dbms/query language/_resources/Pasted image 20231114175100.png",
+    "algorithms/Analysis of Algorithms/5 skipped ,6.md",
+    "algorithms/Analysis of Algorithms/7.md",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116211212.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116211156.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116211129.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116185453.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116184229.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116184128.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116181403.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116180501.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116175953.png",
+    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116174501.png",
+    "bash scripting/BASH SHELL SCRIPTING/2.md",
+    "dbms/query language/2.md",
+    "dbms/query language/1.md",
     "dbms/query language/_resources",
     "github/GIT & GITHUB/4 How git works under the hood.md",
-    "dbms/query language/1.md",
     "dbms/query language",
     "dbms",
     "dockernotes/Docker/3 Docker Networking.md",
     "dockernotes/Docker/Untitled.md",
     "algorithms/Analysis of Algorithms/3 Order of magnitude method.md",
-    "algorithms/Analysis of Algorithms/5.md",
     "algorithms/Analysis of Algorithms/4 Introduction to big oh, omega and theta notation.md",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231114100124.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231114095852.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231114095820.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231114095737.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231114095711.png",
     "github/GIT & GITHUB/_resources",
     "github/GIT & GITHUB/3 Basic Shell Commands.md",
     "github/GIT & GITHUB/1 Introduction to the Git and Github.md",
