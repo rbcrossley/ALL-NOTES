@@ -84,6 +84,9 @@ All exposed ports are published to random ports of the host.
 ```
 # Legacy Approach for Linking Containers
 ![](_resources/Pasted%20image%2020231118155426.png)
+
 link is telling to link container01 with container02.
+
 ![](_resources/Pasted%20image%2020231118155519.png)
+
 You could ping "container" which is container01 from container02.
