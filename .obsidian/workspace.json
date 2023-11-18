@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/7.md",
+                "file": "dockernotes/Docker/3 Docker Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/7.md",
+                "file": "dockernotes/Docker/3 Docker Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/7.md",
+                "file": "dockernotes/Docker/3 Docker Networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/Analysis of Algorithms/7.md"
+                "file": "dockernotes/Docker/3 Docker Networking.md"
               }
             }
           }
@@ -149,8 +149,10 @@
   },
   "active": "5192e92c987b4fae",
   "lastOpenFiles": [
-    "algorithms/Analysis of Algorithms/5 skipped ,6.md",
+    "dockernotes/Docker/_resources/Pasted image 20231118155519.png",
+    "dockernotes/Docker/_resources/Pasted image 20231118155426.png",
     "algorithms/Analysis of Algorithms/7.md",
+    "algorithms/Analysis of Algorithms/5 skipped ,6.md",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116211212.png",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116211156.png",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116211129.png",
@@ -160,7 +162,6 @@
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116181403.png",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116180501.png",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116175953.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116174501.png",
     "bash scripting/BASH SHELL SCRIPTING/2.md",
     "dbms/query language/2.md",
     "dbms/query language/1.md",
@@ -193,7 +194,6 @@
     "web security/1 Same Origin Policy.md",
     "web security/Content Flow.md",
     "blog/Linux Commands that I use almost regularly.md",
-    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/web security 1.md",
-    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/1 email and linux.md"
+    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/web security 1.md"
   ]
 }

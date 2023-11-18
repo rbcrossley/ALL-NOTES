@@ -67,3 +67,23 @@ docker container exec -it mybridge01 bash
 ```
 # Host Network
 It behaves as if container is the host itself.
+# None Network
+- No IP address of container except the loopback interface.
+- Container can't contact any other containers or external world.
+- Thus this disables networking stack on container.
+# Publish all argument for exposed ports
+```
+docker container run -dt --name webserver -p 80:80 nginx
+```
+## Publish all -P
+All exposed ports are published to random ports of the host.
+```
+ docker container run -dt --name webserver nginx
+ docker container run -dt -p 8080:80 --name webserver01 nginx
+ docker container run -dt -P --name webserver02 nginx
+```
+# Legacy Approach for Linking Containers
+![](_resources/Pasted%20image%2020231118155426.png)
+link is telling to link container01 with container02.
+![](_resources/Pasted%20image%2020231118155519.png)
+You could ping "container" which is container01 from container02.
