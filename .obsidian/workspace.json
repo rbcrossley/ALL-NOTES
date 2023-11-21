@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md",
+                "file": "blog/How to install ssl certificate in Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md",
+                "file": "blog/How to install ssl certificate in Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md",
+                "file": "blog/How to install ssl certificate in Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md"
+                "file": "blog/How to install ssl certificate in Linux.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "5192e92c987b4fae",
   "lastOpenFiles": [
+    "blog/Linux  Commands and SQL queries that I use almost regularly.md",
     "blog/How to install ssl certificate in Linux.md",
     "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/1 email and linux.md",
     "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/2 Using Telnet to Send Mail.md",
@@ -192,7 +193,6 @@
     "algorithms/Analysis of Algorithms/2 Need for analysis.md",
     "algorithms/Analysis of Algorithms/_resources",
     "algorithms/2.md",
-    "algorithms/1 Introduction to Algorithms.md",
     "algorithms/Analysis of Algorithms",
     "algorithms/_resources"
   ]

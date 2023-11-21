@@ -6,7 +6,7 @@ domain_name_certificate.crt is the main certificate.
 CA_Bundle.crt is combination of intermediate+CA root.
 ## sectigo certificate order
 ssl certificate 
-banksmart 
+domain_name 
 sectigo
 usertrust
 AAA
@@ -30,7 +30,7 @@ the stdin output should match
 
 # Test if certificate is reflected(sometimes blocked by Web Application Firewall in Nginx)
 ```
-curl bankxpreport.kamanasewabank.com.np -vI
+curl domain_name_without_http -vI
 ```
 
 # With certbot
