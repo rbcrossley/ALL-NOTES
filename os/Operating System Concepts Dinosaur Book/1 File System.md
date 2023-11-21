@@ -182,3 +182,47 @@ It is important you look this from top-bottom.
 - Translate abstract commands like "retrieve block X" to actual low-level commands to the hardware devices.
 
 ![c2435dc07d683ed73bf8e3c8bf488962.png](../_resources/c2435dc07d683ed73bf8e3c8bf488962.png)
+
+
+# File Allocation Methods
+![](_resources/Pasted%20image%2020231119204900.png)
+# Contiguous Allocation
+![](_resources/Pasted%20image%2020231119205129.png)
+
+Disk Blocks has 2 important concepts
+- Disk Block Address (bits)
+- Disk Block Size (bytes)
+- Maximum possible file size=Maximum possible disk size=$2^{DBA}*DBS$ 
+## Performance
+- Internal fragmentation
+	- yes
+	- like paging in last block.
+	- if I'm using only half of the last block, I get internal fragmentation.
+- External fragmentation
+	- yes
+	- external/unused blocks piling up but not contiguously, then they have no meaning because I need contiguous blocks.
+- Increasing existing file size
+	- Say I've a file with 2 blocks which now requires 4 blocks, now if there's no free space contiguously, I need to find where's the free space and allocate accordingly.
+	- Inflexible
+- Type of Access
+	- Sequential and Random both possible, because it's like an array.
+	- Since it supports random access, it's faster. That's the only benefit of this file allocation method.
+# Linked Allocation
+![](_resources/Pasted%20image%2020231119211837.png)
+
+- Internal Fragmentation
+	- Yes, last block
+- External Fragmentation
+	- No
+- Increase in file size
+	- Always possible as long as free blocks are available.
+- Type of Access
+	- Sequential as it's linked list alike. Thus slower.
+- Performance efficiency with respect to space overhead.
+	- pointers needed for every disk block. Say the block size is 512 byte but say 2 bytes are storing the address, thus you will have only 510 bytes per block effectively to store the file. This reduces the file size.
+- Vulnerability of pointers
+	- Pointers can break. If they're broken then the whole file can't be accessed. That's the reason why generally in linked list allocation, last address of file is also stored.
+1:06:20
+
+# Image Credits
+Operating Systems Godbole, Kahate

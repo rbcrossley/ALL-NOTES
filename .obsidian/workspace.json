@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dockernotes/Docker/3 Docker Networking.md",
+                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dockernotes/Docker/3 Docker Networking.md",
+                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dockernotes/Docker/3 Docker Networking.md",
+                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dockernotes/Docker/3 Docker Networking.md"
+                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md"
               }
             }
           }
@@ -149,6 +149,22 @@
   },
   "active": "5192e92c987b4fae",
   "lastOpenFiles": [
+    "blog/How to install ssl certificate in Linux.md",
+    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/1 email and linux.md",
+    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/2 Using Telnet to Send Mail.md",
+    "os/Operating System Concepts Dinosaur Book/1 File System.md",
+    "os/Operating System Concepts Dinosaur Book/_resources/Pasted image 20231119211837.png",
+    "os/Operating System Concepts Dinosaur Book/_resources/Pasted image 20231119205129.png",
+    "os/Operating System Concepts Dinosaur Book/_resources/Pasted image 20231119204900.png",
+    "os/Operating System Concepts Dinosaur Book/_resources",
+    "os/Operating System Concepts Dinosaur Book/Untitled.md",
+    "algorithms/Analysis of Algorithms/1 Analysis of algorithms.md",
+    "bash scripting/BASH SHELL SCRIPTING/6  Lists of commands.md",
+    "bash scripting/BASH SHELL SCRIPTING/logrotate.md",
+    "github/GIT & GITHUB/4 How git works under the hood.md",
+    "dbms/query language/1.md",
+    "dbms/query language/2.md",
+    "dockernotes/Docker/3 Docker Networking.md",
     "dockernotes/Docker/_resources/Pasted image 20231118155519.png",
     "dockernotes/Docker/_resources/Pasted image 20231118155426.png",
     "algorithms/Analysis of Algorithms/7.md",
@@ -158,18 +174,10 @@
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116211129.png",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116185453.png",
     "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116184229.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116184128.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116181403.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116180501.png",
-    "algorithms/Analysis of Algorithms/_resources/Pasted image 20231116175953.png",
     "bash scripting/BASH SHELL SCRIPTING/2.md",
-    "dbms/query language/2.md",
-    "dbms/query language/1.md",
     "dbms/query language/_resources",
-    "github/GIT & GITHUB/4 How git works under the hood.md",
     "dbms/query language",
     "dbms",
-    "dockernotes/Docker/3 Docker Networking.md",
     "dockernotes/Docker/Untitled.md",
     "algorithms/Analysis of Algorithms/3 Order of magnitude method.md",
     "algorithms/Analysis of Algorithms/4 Introduction to big oh, omega and theta notation.md",
@@ -182,18 +190,10 @@
     "dockernotes/Docker/2 Image Creation, Management and Registry.md",
     "dockernotes/Docker",
     "algorithms/Analysis of Algorithms/2 Need for analysis.md",
-    "algorithms/Analysis of Algorithms/1 Analysis of algorithms.md",
     "algorithms/Analysis of Algorithms/_resources",
     "algorithms/2.md",
     "algorithms/1 Introduction to Algorithms.md",
     "algorithms/Analysis of Algorithms",
-    "web security/Cross Site Scripting.md",
-    "web security/Untitled.md",
-    "algorithms/_resources",
-    "algorithms",
-    "web security/1 Same Origin Policy.md",
-    "web security/Content Flow.md",
-    "blog/Linux Commands that I use almost regularly.md",
-    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/web security 1.md"
+    "algorithms/_resources"
   ]
 }

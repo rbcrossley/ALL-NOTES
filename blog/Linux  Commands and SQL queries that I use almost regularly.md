@@ -80,3 +80,34 @@ tail -f application.log | tee -a /tmp/log
 tee will save the STDIN to a file and also send it to STDOUT. (without -a it will overwrite any existing file).
 ```
 This is yet another most used command in my day to day life to capture real time logs.
+
+# SQL query to find table name from column name
+
+## mysql
+```
+SELECT DISTINCT TABLE_NAME 
+    FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE COLUMN_NAME LIKE ('%the_column_name%')
+        AND TABLE_SCHEMA='table_name';
+```
+
+## ms-sql
+
+```
+SELECT
+    ColumnName = c.name,
+    SchemaName = SCHEMA_NAME(t.schema_id),
+    TableName = t.name
+FROM 
+    sys.columns c
+INNER JOIN 
+    sys.tables t ON t.object_id = c.object_id
+WHERE
+    c.name = 'your-column-name-here'
+```
+
+# SQL Query to take backup of table
+```
+CREATE TABLE ABCD_2023_09_03 SELECT * FROM ABCD;
+```
+
