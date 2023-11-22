@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/How to install ssl certificate in Linux.md",
+                "file": "os/Operating System Concepts Dinosaur Book/1 File System.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/How to install ssl certificate in Linux.md",
+                "file": "os/Operating System Concepts Dinosaur Book/1 File System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/How to install ssl certificate in Linux.md",
+                "file": "os/Operating System Concepts Dinosaur Book/1 File System.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/How to install ssl certificate in Linux.md"
+                "file": "os/Operating System Concepts Dinosaur Book/1 File System.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "5192e92c987b4fae",
   "lastOpenFiles": [
-    "blog/Linux  Commands and SQL queries that I use almost regularly.md",
     "blog/How to install ssl certificate in Linux.md",
+    "blog/Linux  Commands and SQL queries that I use almost regularly.md",
     "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/1 email and linux.md",
     "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/2 Using Telnet to Send Mail.md",
     "os/Operating System Concepts Dinosaur Book/1 File System.md",

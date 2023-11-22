@@ -222,7 +222,26 @@ Disk Blocks has 2 important concepts
 	- pointers needed for every disk block. Say the block size is 512 byte but say 2 bytes are storing the address, thus you will have only 510 bytes per block effectively to store the file. This reduces the file size.
 - Vulnerability of pointers
 	- Pointers can break. If they're broken then the whole file can't be accessed. That's the reason why generally in linked list allocation, last address of file is also stored.
-1:06:20
+# Indexed Allocation
+
+
+# MCQs
+## In a file allocation system, which of the following allocation scheme(s) can be used if no external fragmentation is allowed?
+Linked and Indexed Allocation
+
+## Consider a Unix i-node structure that has 8 direct disk block addresses and 3 indirect disk block addresses, namely single, double and triple. Disk block size is 1KB and each block can hold 128 disk block addresses.
+Calculate
+i) Maximum file size with this i-node structure?
+ii) Size of disk block address?
+Maximum file size=$$8KB+128.1KB+128^2.1KB+128^3.1KB$$
+Size of disk block address= Size of disk block/number of disk block addresses hold by disk block=1KB/128=8 bytes
+## Using a larger block size in a fixed block size file system leads to
+Poorer disk space utilization
+Throughput=number of bytes you can read with 1 single access.
+So it will be better.
+
+# FAT and i-node case studies
+Refer Godbole,Kahate for FAT and Unix i-node file system implementation. 
 
 # Image Credits
 Operating Systems Godbole, Kahate
