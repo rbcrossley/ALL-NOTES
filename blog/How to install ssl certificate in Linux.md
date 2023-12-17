@@ -40,3 +40,8 @@ curl domain_name_without_http -vI
 `certbot --nginx -d domain_name`
 ## For renewal
 `certbot renew`
+
+## To check if certbot is active
+```
+systemctl status certbot-nginx
+```

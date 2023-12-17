@@ -242,6 +242,8 @@ So it will be better.
 
 # FAT and i-node case studies
 Refer Godbole,Kahate for FAT and Unix i-node file system implementation. 
-
+1.24.05
+# study it once you study about disks structure
+Answer is note copy.
 # Image Credits
 Operating Systems Godbole, Kahate

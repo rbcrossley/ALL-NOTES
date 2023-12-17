@@ -39,7 +39,10 @@ Same hash function with same hash input will always produce same output.
 # How many files could git store in the same repository?
 $2^{160}$
 # What is the chance of producing same hash for different files?
+$1/2^{160} * 1/2^{160}$
+
 
 
 Reference:
 https://stashchuk.com/static/git/4-how-git-works-under-the-hood.pdf
+

@@ -34,6 +34,28 @@ LC_ALL=C awk -v beg=12:15:00 -v end=13:00:00 '
   selected' name_of_log_file
 ```
 This finds the logs between two time durations where the time is in form of `HH:MM:SS`
+Thanks to chatgpt for more advanced version of this command which is more easier.
+```
+#!/bin/bash
+
+# Check if three arguments are provided
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <beg_time> <end_time> <log_file>"
+    exit 1
+fi
+
+beg=$1
+end=$2
+log_file=$3
+
+LC_ALL=C awk -v beg="$beg" -v end="$end" '
+  match($0, /[0-2][0-9]:[0-5][0-9]:[0-5][0-9]/) {
+    t = substr($0, RSTART, 8)
+    if (t >= end) selected = 0
+    else if (t >= beg) selected = 1
+  }
+  selected' "$log_file"
+```
 # Empty a file
 ```
 echo > catalina.out
@@ -81,6 +103,17 @@ tee will save the STDIN to a file and also send it to STDOUT. (without -a it wil
 ```
 This is yet another most used command in my day to day life to capture real time logs.
 
+# To insert new line after new paragraph after date in logs
+```
+:%s/\d\{4}-\d\{2}-\d\{2} \d\{2}:\d\{2}:\d\{2}/\r&/
+OR
+:%s/\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d/\r&/
+```
+The date format being
+```
+2023-11-26 14:14:14
+```
+
 # SQL query to find table name from column name
 
 ## mysql
@@ -110,4 +143,5 @@ WHERE
 ```
 CREATE TABLE ABCD_2023_09_03 SELECT * FROM ABCD;
 ```
+
 
