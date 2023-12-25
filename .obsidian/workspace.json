@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md",
+                "file": "blog/Resume.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/courses2do.md",
+                "file": "blog/Resume.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md",
+                "file": "blog/Resume.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md",
+                "file": "blog/Resume.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/Linux  Commands and SQL queries that I use almost regularly.md"
+                "file": "blog/Resume.md"
               }
             }
           },
@@ -169,11 +169,30 @@
   },
   "active": "d9f26a6f6c9c2e9a",
   "lastOpenFiles": [
-    "algorithms/Design Strategies/01 Design Strategies.md",
     "blog/courses2do.md",
-    "blog/How to install ssl certificate in Linux.md",
-    "algorithms/Design Strategies/_resources/Pasted image 20231214173721.png",
     "blog/Linux  Commands and SQL queries that I use almost regularly.md",
+    "blog/How to install ssl certificate in Linux.md",
+    "algorithms/Design Strategies/03 sorting algorithms.md",
+    "blog/Resume.md",
+    "algorithms/Design Strategies/02 Searching algorithms.md",
+    "dockernotes/Docker/4 Docker Storage and Volumes.md",
+    "dockernotes/Docker/3 Docker Networking.md",
+    "web security/2 Cross Site Scripting.md",
+    "bash scripting/BASH SHELL SCRIPTING/logrotate.md",
+    "web scraping/How to learn etc.md",
+    "algorithms/Design Strategies/01 Design Strategies.md",
+    "DNS/DNS/4 Types of DNS records.md",
+    "DNS/DNS/3 Operational DNS.md",
+    "DNS/DNS/2 Domain Names.md",
+    "DNS/DNS/1 DNS from first principles.md",
+    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/1 email and linux.md",
+    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/2 Using Telnet to Send Mail.md",
+    "LINUX AND NETWORKING/TCP/01 TCP.md",
+    "linux performance monitoring/MONITORING LINUX SERVERS/1 Monitoring the system using different useful too.md",
+    "github/GIT & GITHUB/4 How git works under the hood.md",
+    "nginx/NGINX@home/8 Access Control.md",
+    "nginx/NGINX@home/3 Getting Started With NGINX.md",
+    "algorithms/Design Strategies/_resources/Pasted image 20231214173721.png",
     "algorithms/Design Strategies/_resources/Pasted image 20231213202519.png",
     "algorithms/Design Strategies/_resources/Pasted image 20231213202510.png",
     "algorithms/Design Strategies/_resources/Pasted image 20231213202501.png",
@@ -181,7 +200,6 @@
     "algorithms/Design Strategies/_resources/Pasted image 20231213195540.png",
     "algorithms/Design Strategies/_resources/Pasted image 20231213195524.png",
     "algorithms/Design Strategies/_resources",
-    "LINUX AND NETWORKING/TCP/01 TCP.md",
     "Kubernetes/01/01-Installation Methods.md",
     "LINUX AND NETWORKING/TCP",
     "algorithms/Design Strategies",
@@ -191,28 +209,11 @@
     "Kubernetes/01/_resources",
     "Kubernetes/01",
     "Kubernetes",
-    "web security/2 Cross Site Scripting.md",
     "web security/Content Flow.md",
     "web security/1 Same Origin Policy.md",
-    "DNS/DNS/4 Types of DNS records.md",
     "DNS/DNS/_resources",
-    "algorithms/Analysis of Algorithms/7,8.md",
     "courses",
-    "LPIC-101 studying/LINUX NETWORKING LPIC/netstat & ss.md",
     "LPIC-101 studying/LINUX NETWORKING LPIC/_resources",
-    "LPIC-101 studying/BASH SCRIPTING LPIC/PS1 variable.md",
-    "LPIC-101 studying/LINUX NETWORKING LPIC",
-    "web scraping/How to learn etc.md",
-    "LINUX AND NETWORKING/How to learn networking in Linux.md",
-    "bash scripting/BASH SHELL SCRIPTING/LPIC exam bash scripting problems.md",
-    "github/GIT & GITHUB/4 How git works under the hood.md",
-    "os/Operating System Concepts Dinosaur Book/2 synchronization.md",
-    "os/Operating System Concepts Dinosaur Book/1 File System.md",
-    "algorithms/Analysis of Algorithms/5 skipped ,6.md",
-    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/1 email and linux.md",
-    "LINUX AND NETWORKING/EMAILS & LINUX/EMAIL AND LINUX/2 Using Telnet to Send Mail.md",
-    "algorithms/Analysis of Algorithms/1 Analysis of algorithms.md",
-    "bash scripting/BASH SHELL SCRIPTING/6  Lists of commands.md",
-    "bash scripting/BASH SHELL SCRIPTING/logrotate.md"
+    "LPIC-101 studying/LINUX NETWORKING LPIC"
   ]
 }

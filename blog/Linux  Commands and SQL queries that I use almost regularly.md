@@ -114,14 +114,27 @@ The date format being
 2023-11-26 14:14:14
 ```
 
+To do this without using vi editor, use this command
+```
+sed -E 's/\b([0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2})\b/\1\n/g' inputfile > outputfile
+```
+# To apply permissions for files with same extension at once
+```
+find /images/. -name "*.jpg" -exec chmod 0644 {} \;
+```
+# To highlight multiple strings in less editor
+```
+/foo|bar
+```
+https://unix.stackexchange.com/a/765157/588983
 # SQL query to find table name from column name
 
 ## mysql
 ```
 SELECT DISTINCT TABLE_NAME 
-    FROM INFORMATION_SCHEMA.COLUMNS
-    WHERE COLUMN_NAME LIKE ('%the_column_name%')
-        AND TABLE_SCHEMA='table_name';
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE COLUMN_NAME LIKE ('%the_column_name%')
+AND TABLE_SCHEMA='table_name';
 ```
 
 ## ms-sql

@@ -41,6 +41,12 @@ $2^{160}$
 # What is the chance of producing same hash for different files?
 $1/2^{160} * 1/2^{160}$
 
+# Exploring git objects with git cat-file command
+```
+git cat-file -p <hash> contents of the object
+git cat-file -s <hash> size of the object
+git cat-file -t <hash> type of the object
+```
 
 
 Reference:
