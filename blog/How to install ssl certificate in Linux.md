@@ -45,3 +45,7 @@ curl domain_name_without_http -vI
 ```
 systemctl status certbot-nginx
 ```
+## To restart nginx if there is no systemctl nginx service
+```
+/usr/sbin/nginx -s reload
+```

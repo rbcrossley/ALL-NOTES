@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/Resume.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9432b5d3139934d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/Resume.md",
+                "file": "blog/How to install ssl certificate in Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 250.5
   },
   "right": {
     "id": "c9fbb528321ec821",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/Resume.md",
+                "file": "blog/How to install ssl certificate in Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/Resume.md",
+                "file": "blog/How to install ssl certificate in Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/Resume.md"
+                "file": "blog/How to install ssl certificate in Linux.md"
               }
             }
           },
@@ -169,11 +157,15 @@
   },
   "active": "d9f26a6f6c9c2e9a",
   "lastOpenFiles": [
-    "blog/courses2do.md",
-    "blog/Linux  Commands and SQL queries that I use almost regularly.md",
+    "blog/SQL Queries that I use regularly.md",
+    "blog/Linux  Commands that I use almost regularly.md",
+    "blog/_resources/Pasted image 20231226171317.png",
+    "blog/_resources/Pasted image 20231226171157.png",
     "blog/How to install ssl certificate in Linux.md",
-    "algorithms/Design Strategies/03 sorting algorithms.md",
+    "dockernotes/Docker/2 Image Creation, Management and Registry.md",
     "blog/Resume.md",
+    "blog/courses2do.md",
+    "algorithms/Design Strategies/03 sorting algorithms.md",
     "algorithms/Design Strategies/02 Searching algorithms.md",
     "dockernotes/Docker/4 Docker Storage and Volumes.md",
     "dockernotes/Docker/3 Docker Networking.md",
@@ -200,17 +192,12 @@
     "algorithms/Design Strategies/_resources/Pasted image 20231213195540.png",
     "algorithms/Design Strategies/_resources/Pasted image 20231213195524.png",
     "algorithms/Design Strategies/_resources",
-    "Kubernetes/01/01-Installation Methods.md",
     "LINUX AND NETWORKING/TCP",
     "algorithms/Design Strategies",
     "Kubernetes/01/_resources/Pasted image 20231212170946.png",
-    "Kubernetes/01/_resources/Pasted image 20231212152231.png",
-    "Kubernetes/01/_resources/Pasted image 20231212152139.png",
     "Kubernetes/01/_resources",
     "Kubernetes/01",
     "Kubernetes",
-    "web security/Content Flow.md",
-    "web security/1 Same Origin Policy.md",
     "DNS/DNS/_resources",
     "courses",
     "LPIC-101 studying/LINUX NETWORKING LPIC/_resources",

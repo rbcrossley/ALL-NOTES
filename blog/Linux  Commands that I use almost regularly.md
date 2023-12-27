@@ -82,10 +82,6 @@ backuppedconf will contain all three files.
 split -n 20 name_of_log.log /tmp/smallfile
 ```
 This will split the file named `name_of_log.log` into 20 different pieces and save them into `/tmp/smallfile`  as `smallfileaa smallfileab ...`
-# Search exact match word in vi editor
-```
-/\<FOO\>
-```
 # Recursively search search for files containing a string that are .gz files
 ```cmd
 find . -mtime -15 -name "*.gz" -exec zgrep -lH "string" {} \;
@@ -118,6 +114,15 @@ To do this without using vi editor, use this command
 ```
 sed -E 's/\b([0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2})\b/\1\n/g' inputfile > outputfile
 ```
+# SSH Tunneling
+![](_resources/Pasted%20image%2020231226171157.png)
+
+```
+ssh -p <SSH port> -L <Forwarded port>:<Remote server>:<Remote port> <SSH login>@<SSH server>
+```
+![](_resources/Pasted%20image%2020231226171317.png)
+
+
 # To apply permissions for files with same extension at once
 ```
 find /images/. -name "*.jpg" -exec chmod 0644 {} \;
@@ -126,35 +131,12 @@ find /images/. -name "*.jpg" -exec chmod 0644 {} \;
 ```
 /foo|bar
 ```
-https://unix.stackexchange.com/a/765157/588983
-# SQL query to find table name from column name
-
-## mysql
+# Search exact match word in vi editor
 ```
-SELECT DISTINCT TABLE_NAME 
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE COLUMN_NAME LIKE ('%the_column_name%')
-AND TABLE_SCHEMA='table_name';
+/\<FOO\>
 ```
-
-## ms-sql
-
+# Case insensitive search in less/vi editor
+Just add `\c` at the end.
 ```
-SELECT
-    ColumnName = c.name,
-    SchemaName = SCHEMA_NAME(t.schema_id),
-    TableName = t.name
-FROM 
-    sys.columns c
-INNER JOIN 
-    sys.tables t ON t.object_id = c.object_id
-WHERE
-    c.name = 'your-column-name-here'
+/copyright\c
 ```
-
-# SQL Query to take backup of table
-```
-CREATE TABLE ABCD_2023_09_03 SELECT * FROM ABCD;
-```
-
-
