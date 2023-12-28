@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/How to install ssl certificate in Linux.md",
+                "file": "blog/Linux  Commands that I use almost regularly.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/How to install ssl certificate in Linux.md",
+                "file": "blog/Linux  Commands that I use almost regularly.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/How to install ssl certificate in Linux.md",
+                "file": "blog/Linux  Commands that I use almost regularly.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/How to install ssl certificate in Linux.md"
+                "file": "blog/Linux  Commands that I use almost regularly.md"
               }
             }
           },
@@ -157,14 +157,14 @@
   },
   "active": "d9f26a6f6c9c2e9a",
   "lastOpenFiles": [
+    "blog/courses2do.md",
+    "blog/How to install ssl certificate in Linux.md",
     "blog/SQL Queries that I use regularly.md",
     "blog/Linux  Commands that I use almost regularly.md",
     "blog/_resources/Pasted image 20231226171317.png",
     "blog/_resources/Pasted image 20231226171157.png",
-    "blog/How to install ssl certificate in Linux.md",
     "dockernotes/Docker/2 Image Creation, Management and Registry.md",
     "blog/Resume.md",
-    "blog/courses2do.md",
     "algorithms/Design Strategies/03 sorting algorithms.md",
     "algorithms/Design Strategies/02 Searching algorithms.md",
     "dockernotes/Docker/4 Docker Storage and Volumes.md",

@@ -90,3 +90,15 @@ https://www.udemy.com/course/selenium-python-step-by-step-for-beginners/
 
 https://www.udemy.com/course/elegant-browser-automation-with-python-and-selenium/
 
+# SSL
+https://www.udemy.com/course/ssltls-and-pki/
+
+https://www.udemy.com/course/openssl-cheatsheet/
+
+https://www.udemy.com/course/modern-tls-bootcamp/
+
+https://www.udemy.com/course/ssltls-essentials-theory-and-implementation/
+
+# mysql procedures
+
+https://www.udemy.com/course/mysql-and-sql-from-beginner-to-advanced/

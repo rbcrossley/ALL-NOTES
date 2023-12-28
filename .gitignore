@@ -1,0 +1,5 @@
+# Exclude .obsidian files
+.obsidian/
+
+# Exclude .trash files
+.trash/

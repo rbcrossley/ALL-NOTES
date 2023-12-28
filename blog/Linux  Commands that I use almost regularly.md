@@ -56,6 +56,28 @@ LC_ALL=C awk -v beg="$beg" -v end="$end" '
   }
   selected' "$log_file"
 ```
+**Thanks to stackexchange for more advanced version of this script. This will collect only the part of file between two time durations, directly from the .log.gz file.**
+```
+#!/bin/bash
+
+# Check if three arguments are provided
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <beg_time> <end_time> <log_file_gzipped>"
+    exit 1
+fi
+
+beg=$1
+end=$2
+log_file_gzipped=$3
+
+zcat "$log_file" | LC_ALL=C awk -v beg="$beg" -v end="$end" '
+  match($0, /[0-2][0-9]:[0-5][0-9]:[0-5][0-9]/) {
+    t = substr($0, RSTART, 8)
+    if (t >= end) selected = 0
+    else if (t >= beg) selected = 1
+  }
+  selected'
+```
 # Empty a file
 ```
 echo > catalina.out
