@@ -1,7 +1,3 @@
-Disclaimer
-- I didn't create these commands. Thanks to my seniors, unix.stackexchange.com for all these commands.
-- They're not in particular order.
-- I'm a newbie so take these commands with a grain of salt.
 # Find if a string exists within proximity between another string
 Say you know a string1 as a placeholder in your logs and you want to pick an error(string2) near that phone number.
 ```
