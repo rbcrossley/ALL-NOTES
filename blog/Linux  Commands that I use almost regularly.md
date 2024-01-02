@@ -1,11 +1,9 @@
-# Find if a string exists within proximity between another string
-Say you know a string1 as a placeholder in your logs and you want to pick an error(string2) near that phone number.
+# Find a string on the neighborhood of another string
+This scenario is very much useful in logs searching. Say your requirement is that you want to find a log file which contains "string1" and "string2" but within say 10 lines of "string1". This will greatly reduce the time wastage on checking all the logs.
 ```
-what_we_want='error'
-context='placeholder'
-distance=10
-grep -E -e "${context}" -C "${distance}" file_to_look_into | grep -E -e "${what_we_want}" -C "${distance}"
+find . -exec bash -c 'zgrep -C20 "phone_number" {} | grep -q "payment_type" && echo {}' \;
 ```
+This will output file names.
 # Sort by first column name
 You want to sort the output of disk usage command by the size.
 ```
@@ -74,6 +72,17 @@ zcat "$log_file" | LC_ALL=C awk -v beg="$beg" -v end="$end" '
   }
   selected'
 ```
+
+# Gzip all logs in a current directory and save them to a different file
+```
+gzip *
+```
+# Gzip all logs in a current directory except the one named application.log
+```
+find . -maxdepth 1 -mindepth 1 ! -name 'application.log'  -exec gzip {} \;
+```
+This will also gzip to a different file each.
+![](_resources/Pasted%20image%2020231231142846.png)
 # Empty a file
 ```
 echo > catalina.out
@@ -81,6 +90,15 @@ OR
 > catalina.out
 ```
 Both will do the same thing.
+# Find the biggest single file in the entire directory tree
+```
+ find . -type f -printf "%s\t%p\n" | sort -n | tail -4
+```
+This will show the top 4 files that are very big.
+```
+-n, --numeric-sort
+compare according to string numerical value
+```
 # Copying multiple files to take backup using cp command
 If all the files are having same extensions:
 ```
@@ -130,7 +148,7 @@ The date format being
 
 To do this without using vi editor, use this command
 ```
-sed -E 's/\b([0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2})\b/\1\n/g' inputfile > outputfile
+sed -e 's/[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\} [0-9]\{2\}:[0-9]\{2\}:[0-9]\{2\}/\n&/' input > /tmp/output
 ```
 # SSH Tunneling
 ![](_resources/Pasted%20image%2020231226171157.png)
@@ -157,4 +175,8 @@ find /images/. -name "*.jpg" -exec chmod 0644 {} \;
 Just add `\c` at the end.
 ```
 /copyright\c
+```
+# List only directories in current directory
+```
+ls -d */
 ```

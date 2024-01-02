@@ -7,4 +7,5 @@ Tasks done at my current company:
 - Analyzed the logs and debugged code based on logs and did RCA behind the problem.
 - Automated viewing sms server bound, unbound state using node js.
 - Wrote a node.js application to monitor SSL certificates expiry date.
+- Wrote logrotate configurations to clear logs timely.
 
