@@ -1,6 +1,8 @@
 These are the concepts to learn on my bucket list. They can change.
 # more linux
 https://www.udemy.com/course/mastering-linux/
+# ansible
+https://www.udemy.com/course/ansible-playbooks-for-automation/
 # excel
 https://www.udemy.com/course/excel-vba-and-macros-course/
 
@@ -63,5 +65,8 @@ https://www.udemy.com/course/networking-fundamentals-for-full-stack-web-develope
 # python advanced
 
 https://www.udemy.com/course/python3-fundamentals/
+
+# food
+https://www.udemy.com/course/art-of-cooking-north-indian-food/
 # Immediate Learning Roadmap
 - backend core concepts

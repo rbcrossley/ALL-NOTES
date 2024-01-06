@@ -55,3 +55,7 @@ console.log(A);
 ![](_resources/mergesort.jpg)
 ## Time Complexity
 ![](_resources/tcmergesort.jpg)
+![](_resources/Pasted%20image%2020240104112954.png)
+## Mergesort diagram explained
+![](_resources/Pasted%20image%2020240104115710.png)
+![](_resources/Pasted%20image%2020240104115721.png)

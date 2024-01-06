@@ -4,6 +4,10 @@ This scenario is very much useful in logs searching. Say your requirement is tha
 find . -exec bash -c 'zgrep -C20 "phone_number" {} | grep -q "payment_type" && echo {}' \;
 ```
 This will output file names.
+A faster version of this, why is it faster?(TBD)
+```
+find . -name "*.gz" -type f -exec bash -c 'for arg; do zgrep -C20 "phone_number" "$arg" | grep -q "payment_type" && echo "$arg"; done' dummy {} +
+```
 # Sort by first column name
 You want to sort the output of disk usage command by the size.
 ```
