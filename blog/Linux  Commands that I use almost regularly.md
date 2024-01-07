@@ -81,6 +81,14 @@ zcat "$log_file" | LC_ALL=C awk -v beg="$beg" -v end="$end" '
 ```
 gzip *
 ```
+# Gzip a directory
+```
+tar -zcvf archive.tar.gz directory/ 
+```
+# Unzip a directory
+```
+tar -zxvf archive.tar.gz
+```
 # Gzip all logs in a current directory except the one named application.log
 ```
 find . -maxdepth 1 -mindepth 1 ! -name 'application.log'  -exec gzip {} \;
@@ -184,3 +192,14 @@ Just add `\c` at the end.
 ```
 ls -d */
 ```
+# backup all files except some folders
+```
+rsync --archive --exclude /logs /home/username/gcm-notification/ /home/username/gcm_notification_to_another
+```
+
+to exclude multiple directories, do this
+```cmd
+ rsync --archive --exclude={'logs/','generated*/','osgi*/'} . ~/admin_bak_oct_10_2023
+```
+Note: Use relative paths with exclude. The paths are relative to the source directory, here I'm probably at the admin directory.
+
