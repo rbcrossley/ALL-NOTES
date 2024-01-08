@@ -68,7 +68,7 @@ beg=$1
 end=$2
 log_file_gzipped=$3
 
-zcat "$log_file" | LC_ALL=C awk -v beg="$beg" -v end="$end" '
+zcat "$log_file_gzipped" | LC_ALL=C awk -v beg="$beg" -v end="$end" '
   match($0, /[0-2][0-9]:[0-5][0-9]:[0-5][0-9]/) {
     t = substr($0, RSTART, 8)
     if (t >= end) selected = 0
