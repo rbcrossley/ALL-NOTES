@@ -20,6 +20,11 @@ Example:
 `sftp://root@10.20.30.11`
 # Give execute permissions to every files in a directory
 `chmod -R 777 .`
+# ACL to be able to upload files to a directory using FTP
+```
+setfacl -m u:username:rwX /path/to/the/directory/that/i/want/to/upload/a/file
+```
+Better idea is to just dump to `/tmp` directory and transfer from there.
 # Find logs between two time durations
 This is by far the most used command in my day to day life.
 ```
@@ -202,4 +207,37 @@ to exclude multiple directories, do this
  rsync --archive --exclude={'logs/','generated*/','osgi*/'} . ~/admin_bak_oct_10_2023
 ```
 Note: Use relative paths with exclude. The paths are relative to the source directory, here I'm probably at the admin directory.
+# Command to export images from one server to another
+```
+/usr/local/bin/ctr image export /tmp/de.tar www.example.com/eg/hard:java8-9
+```
+# Remove all spaces from the name in a list of files in a directory
+```
+find . -name '*.jpg' -exec bash -c 'mv "$0" "${0// /_}"' {} \;
+```
+# Logrotate
+```
+/home/sms/sms/logs/*.out {
+        su sms sms
+        daily
+        copytruncate
+        missingok
+        rotate 7
+        compress
+        dateext dateformat -%Y-%m-%d
+}
 
+/home/sms/sms/logs/archived/sms-server/*.log{
+        su sms sms
+        daily
+        copytruncate
+        missingok
+        rotate 7
+        compress
+        dateext dateformat -%Y-%m-%d
+        sharedscripts
+        postrotate
+            /home/sms/sms/bin/shutdown.sh && /home/sms/sms/bin/startup.sh
+        endscript
+}
+```

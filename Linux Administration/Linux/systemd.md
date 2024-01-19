@@ -60,3 +60,44 @@ systemctl {start,stop,restart,reload} unit
 ```
 reload asks the unit to reload its configuration.
 This doesn't reload the systemd unit file, it only asks the service to reload its configuration.
+# systemd logging
+systemd messages captured by journald are stored in the /run directory. rsyslog can process these messages and store them in traditional log files or forward them to a remote syslog server.
+You can configure journald to retain messages from prior boots. To do this, edit /etc/systemd/journald.conf and configure the Storage attribute.
+```
+[Journal]
+Storage=persistent
+```
+You can now get prior boots with
+```
+journalctl --list-boots
+```
+## To restrict the logs associated with a specific unit, use the `-u` flag:
+```
+journalctl -u ntp
+```
+## To find the units
+```
+systemctl list-units --type=service
+```
+# cgroups
+They are mechanism to organize process groups. cgroup can span multiple processes and even contain other cgroups.
+## Use of cgroups
+- It helps to limit resources. We can configure a cgroup to not exceed a specific memory limit. We can also define how much % of CPU resources this cgroup may occupy.
+- It helps to measure how much resources certain systems consume.
+- It helps to freeze a group or processes.
+## Inspect cgroups
+To show processes on our system
+```
+systemctl status
+```
+## To inspect cgroups
+```
+systemd-cgtop
+```
+By default, it displays upto 3 levels of cgroups.
+We can change this level to `--depth=5`.
+### To find the path of executable
+```
+which firefox
+```
+![](_resources/Pasted%20image%2020240114221138.png)

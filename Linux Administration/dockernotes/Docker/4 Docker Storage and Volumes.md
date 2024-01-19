@@ -1,5 +1,9 @@
 # Copy on Write (CoW) strategy
 It means everyone has a single shared copy of the same data until it's written, and then a copy is made.
+```
+cd /var/lib/docker
+```
+will show all the storage drivers of docker as follows.
 
 
 # Reference
