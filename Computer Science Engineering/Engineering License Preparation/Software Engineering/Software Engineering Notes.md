@@ -643,3 +643,49 @@ promotes weak coupling.
 - Avoid multiple inheritance.
 - How do you best model players and roles so that a player can change roles or
 possess multiple roles?
+# Chain of responsibility
+The Chain of Responsibility pattern establishes a chain within a system, so that a message can either be handled at the level where it is first received, or be directed to an object that can handle it. 
+Reduces coupling.
+# TRUE FALSE
+The level of coupling alone can't be considered in isolation from other principles such as expert and high cohesion.
+![](_resources/Pasted%20image%2020240119134810.png)
+Facade means a block that represents an entire system or subsystem. Facade pattern promotes weak coupling between subsystem and its clients.
+An interface-as-controller design decreases the opportunity to reuse logic in future applications.
+High cohesion when someone does less amount of things by themselves and delegates more tasks to others.
+References:
+Sun Certified Enterprise Architect For Java Ee Study Guide, 2/E
+By Cade Mark
+# Aggregation
+![](_resources/Pasted%20image%2020240119143936.png)
+- open diamond on the side of whole.
+- structural relationship between a whole and its parts.
+- has
+- is part of
+# Association
+![](_resources/Pasted%20image%2020240119145417.png)
+## Association Labels
+![](_resources/Pasted%20image%2020240119145536.png)
+Two types:
+- Association names
+- Role names
+Association name is a verb or verb phrase.
+If both omit, association has "has" by default.
+# Heuristics
+- Name classes, attributes and roles with noun phrases.
+- Name operations and association with verb phrases.
+- Capitalize class names but not attribute, operation, association and rolenames.
+- Stick to binary associations.
+- Prefer association names to rolenames.
+# Time-oriented
+Sequence diagram is time-oriented.
+# Component diagram
+![](_resources/Pasted%20image%2020240119151023.png)
+# Generalization
+![](_resources/Pasted%20image%2020240119151311.png)
+# Try catch finally
+![](_resources/Pasted%20image%2020240119161645.png)
+References:
+A Programmer's Guide to Java Certification: A Comprehensive Primer
+By Khalid Azim Mughal, Rolf W. Rasmussen
+![](_resources/Pasted%20image%2020240119152411.png)
+Best book so far.
