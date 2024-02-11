@@ -81,7 +81,45 @@ zcat "$log_file_gzipped" | LC_ALL=C awk -v beg="$beg" -v end="$end" '
   }
   selected'
 ```
+**Thanks to myself for writing a modularized version of this code.**
+```
+#!/bin/bash
 
+# Check if three arguments are provided
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <beg_time> <end_time> <log_file_gzipped>"
+    exit 1
+fi
+
+beg=$1
+end=$2
+log_file_gzipped=$3
+function non_gzipped() {
+    LC_ALL=C awk -v beg="$beg" -v end="$end" '
+  match($0, /[0-2][0-9]:[0-5][0-9]:[0-5][0-9]/) {
+    t = substr($0, RSTART, 8)
+    if (t >= end) selected = 0
+    else if (t >= beg) selected = 1
+  }
+  selected' "$log_file_gzipped"
+}
+
+function gzipped() {
+    zcat "$log_file_gzipped" | LC_ALL=C awk -v beg="$beg" -v end="$end" '
+  match($0, /[0-2][0-9]:[0-5][0-9]:[0-5][0-9]/) {
+    t = substr($0, RSTART, 8)
+    if (t >= end) selected = 0
+    else if (t >= beg) selected = 1
+  }
+  selected'
+}
+if [[ "$log_file_gzipped" == *.gz ]]; then
+    gzipped
+else
+    non_gzipped
+fi
+```
+**Future of this script, grab the time format from any types of files and implement this script.**
 # Gzip all logs in a current directory and save them to a different file
 ```
 gzip *

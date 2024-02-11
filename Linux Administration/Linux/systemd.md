@@ -1,3 +1,7 @@
+References:
+https://www.udemy.com/course/mastering-linux/
+Unix and Linux System Administration Handbook by Evi Nemeth.
+
 systemd is a process that manages OS.
 It's not a part of kernel.
 It doesn't talk to hardware directly.
@@ -101,3 +105,122 @@ We can change this level to `--depth=5`.
 which firefox
 ```
 ![](_resources/Pasted%20image%2020240114221138.png)
+# There is a process already using a port glassfish error
+https://stackoverflow.com/questions/44654024/glassfish-there-is-a-process-already-using-the-admin-port-4848
+Although there is no running Java process and the port is not occupied, you hostname is probably not pingable:
+```
+ping $(hostname)
+```
+output: Request timeout
+Solution:
+Add the following line to the `/etc/hosts` file:
+```
+127.0.0.1 [YOUR_NOT_PINGABLE_HOSTNAME]
+```
+OR
+`pkill -f glassfish`
+OR
+Be sure to delete the `$PATH/TO/domain1/config/pid` and `$PATH/TO/domain1/config/pid.prev` files as well, if the process isn't running but is being reported as still running.
+* * *
+# Practical about systemd memory limiting
+Our Objective is to limit glassfish to only consume 100 MB of memory. 
+## Unit file for glassfish
+```
+[Unit]
+Description = GlassFish Server v4.1
+After = syslog.target network.target
+
+[Service]
+User=techyman
+Group=techyman
+ExecStart = /home/techyman/.java/bin/java -jar /home/techyman/glassfish4/glassfish/lib/client/appserver-cli.jar start-domain
+ExecStop = /home/techyman/.java/bin/java -jar /home/techyman/glassfish4/glassfish/lib/client/appserver-cli.jar stop-domain
+ExecReload = /home/techyman/.java/bin/java -jar /home/techyman/glassfish4/glassfish/lib/client/appserver-cli.jar restart-domain
+Type = forking
+
+[Install]
+WantedBy = multi-user.target
+```
+## Command to limit systemd glassfish to 100MB
+```
+systemd-run --scope -p MemoryHigh=100M --user  /home/techyman/.java/bin/java -jar /home/techyman/glassfish4/glassfish/lib/client/appserver-cli.jar start-domain domain1
+```
+***
+# systemd targets
+![](_resources/Pasted%20image%2020240125173945.png)
+# Targets
+```
+[root@w2 ~]# systemctl cat nginx.service
+# /usr/lib/systemd/system/nginx.service
+[Unit]
+Description=The nginx HTTP and reverse proxy server
+After=network-online.target remote-fs.target nss-lookup.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+PIDFile=/run/nginx.pid
+# Nginx will fail to start if /run/nginx.pid already exists but has the wrong
+# SELinux context. This might happen when running `nginx -t` from the cmdline.
+# https://bugzilla.redhat.com/show_bug.cgi?id=1268621
+ExecStartPre=/usr/bin/rm -f /run/nginx.pid
+ExecStartPre=/usr/sbin/nginx -t
+ExecStart=/usr/sbin/nginx
+ExecReload=/usr/sbin/nginx -s reload
+KillSignal=SIGQUIT
+TimeoutStopSec=5
+KillMode=mixed
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+```
+Read this as 
+>nginx.service is wanted by multi-user.target unit when this unit is enabled.
+
+The only targets to be really aware of are `multi-user.target` and `graphical.target` for day to day use. And `rescue.target` for accessing single-user mode.
+![](_resources/Pasted%20image%2020240126091740.png)
+![](_resources/Pasted%20image%2020240126092813.png)
+![](_resources/Pasted%20image%2020240128084856.png)
+![](_resources/Pasted%20image%2020240128084916.png)
+# systemd for own program
+## About time
+The current time was about 09:xx AM.
+```
+[root@master ~]# date +%H
+09(HOUR)
+[root@master ~]# date +%I
+09(I=MIN)
+[root@master ~]# date +%I%P
+09am(P means AM/PM)
+[root@master ~]# date +%I%P:%M
+09am:08(M means minutes)
+[root@master ~]# date +%I:%M%P
+09:10am
+[root@master ~]# date +%T
+09:12:08(T means full time HH:MM:SS)
+[root@master ~]# date +%m/%d/%Y
+01/28/2024(m means month, d means day, Y means year)
+```
+## Unit file
+```
+[Unit]
+Description=Ping a server and log it
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+StandardOutput=append:/network-log/log.txt
+ExecStart=date '+%%T'
+ExecStart=ping -c 4 google.com
+
+[Install]
+WantedBy=multi-user.target
+```
+Read this as only after "`network-online.target`" has been fully started, start this unit file.
+If output is generated, append it to `/network-log/log.txt`.
+Put this file in `/etc/systemd/system`.
+
+
+

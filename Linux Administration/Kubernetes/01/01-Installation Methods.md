@@ -20,7 +20,6 @@ Kubernetes Node Agent.
 ![](_resources/Pasted%20image%2020231212150841.png)
 k8s master=control plane.
 worker node agents is where application is running.
-
 # kubectl
 - used to deploy applications
 - inspect and manage cluster resources
@@ -36,7 +35,7 @@ To connect to the Kubernetes Master, there are two important data which kubectl 
 
 1) Add the Kubernetes `yum` repository. If you want to use Kubernetes version different than v1.28, replace v1.28 with the desired minor version in the command below.
 
-```bash
+```
 # This overwrites any existing configuration in /etc/yum.repos.d/kubernetes.repo
 cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
@@ -107,3 +106,55 @@ kubectl command
 kubectl exec -it mywebserver -- bash
 ```
 mywebserver is the name of the pod
+# Delete pods
+docker command
+```
+docker stop mywebserver && docker rm mywebserver
+```
+kubectl command
+```
+kubectl delete pod mywebserver
+```
+mywebserver is the name of the pod.
+# What is pod?
+group of one or more containers and some shared resources for those containers.
+A pod always runs on a node.
+A node is a worker machine in Kubernetes.
+Each node is managed by the Master.
+A node can have multiple pods.
+# Kubernetes objects
+Kubernetes objects is basically a record of intent that you pass to the Kubernetes cluster. Once you create the object, the Kubernetes system will constantly work to ensure that object exists.
+## Approach to configure an object
+- kubectl commands
+- YAML file
+``
+```pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mywebserver
+spec:
+  containers:
+    - name: mywebserver
+      image: nginx
+```
+`kubectl apply -f pod.yaml`
+YAML is a human readable data serialization language. It works perfectly with other programming languages.
+# Kubernetes architecture
+- ETCD
+- API Server
+- Scheduler
+- Controller Manager
+- Cloud Controller Manager
+## Kubernetes master architecture
+![](_resources/Pasted%20image%2020240126182946.png)
+![](_resources/Pasted%20image%2020240126183142.png)
+## Kubernetes worker
+![](_resources/Pasted%20image%2020240126183216.png)
+![](_resources/Pasted%20image%2020240126183237.png)
+# For configuring kubectl
+```
+$ mkdir ~/.kube
+$ sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config && sudo chown $USER ~/.kube/config
+$ sudo chmod 600 ~/.kube/config && export KUBECONFIG=~/.kube/config
+```
