@@ -221,6 +221,10 @@ WantedBy=multi-user.target
 Read this as only after "`network-online.target`" has been fully started, start this unit file.
 If output is generated, append it to `/network-log/log.txt`.
 Put this file in `/etc/systemd/system`.
-
+# List all systemd timers
+```
+ systemctl list-timers
+```
+It'll list all the existing timers in the system.
 
 

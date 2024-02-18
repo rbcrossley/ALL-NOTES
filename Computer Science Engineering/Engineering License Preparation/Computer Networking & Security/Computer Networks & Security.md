@@ -127,6 +127,9 @@ SNMP isn't a Remote Access Protocol.
 # Switch vs Router
 The only difference is on which layer they operate.
 [Pasted image 20240127163347](_resources/Pasted%20image%2020240127163347.png)
+![](_resources/Pasted%20image%2020240213135102.png)
+References:
+Smart Grid: Technology and Applications
 Switch operates in data link layer and router operates in network layer.
 Router uses mesh topology.
 References:
