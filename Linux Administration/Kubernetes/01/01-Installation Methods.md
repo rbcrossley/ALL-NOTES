@@ -11,7 +11,8 @@ Various cloud providers provide managed Kubernetes clusters. Most of the organiz
 # Install and configure Kubernetes Manually(Hard Way)
 
 # Installation Aspects
-## kubectl
+```
+```## kubectl
 CLI for running user commands against cluster.
 ## Kubernetes Master
 kubernetes cluster by itself.
