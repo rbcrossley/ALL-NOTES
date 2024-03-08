@@ -8,3 +8,4 @@ rm hugo.toml && cp themes/docura/hugo.yaml .
 hugo server
 ```
 https://staticmania.com/blog/deploy-your-hugo-website-on-github-pages
+# Hugo in depth

@@ -1,1 +1,0 @@
-# Random Scan Display vs Raster Scan Display
