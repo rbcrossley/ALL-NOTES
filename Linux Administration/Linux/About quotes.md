@@ -29,6 +29,8 @@ Remember these two are not the same thing. The first one is enclosed within brac
 # Shell parameter expansion
 ![](_resources/Pasted%20image%2020240201224343.png)
 Here the first command gives the length of the variable PATH.
+# Summary so far
+![](_resources/Pasted%20image%2020240316174745.png)
 # Variable and Parameter Expansion
 Variable expansion starts with dollar sign.
 ```
@@ -95,3 +97,8 @@ The quotes only define how bash will expand/split the command. They do nothing e
 Shows all the files. Here both variable and filenames are expanded.
 ![](_resources/Pasted%20image%2020240201121243.png)
 It expands nothing. Prints as it is.
+# Summary, so far
+![](_resources/Pasted%20image%2020240316181536.png)
+# Summary, Rules for bashers
+- Use double quotes around variables.
+- Refer filenames as `./filename.txt`

@@ -90,4 +90,4 @@ void rec_bs(int key, int low, int high)
 ```
 ## Time Complexity of Recursive Binary Search
 ![](_resources/CamScanner%2012-28-2023%2021.10.jpg)
-gatewallah algo-02 1:13:17
+

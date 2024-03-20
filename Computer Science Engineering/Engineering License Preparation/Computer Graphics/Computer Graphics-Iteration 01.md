@@ -71,3 +71,12 @@ https://stackoverflow.com/questions/22478425/constructing-transformation-matrix-
 ![](_resources/Pasted%20image%2020240308131912.png)
 ![](_resources/Pasted%20image%2020240308131919.png)
 ![](_resources/Pasted%20image%2020240308131927.png)
+# 3d transformations
+![](_resources/Pasted%20image%2020240309111910.png)
+![](_resources/Pasted%20image%2020240309111923.png)
+![](_resources/Pasted%20image%2020240309111930.png)
+![](_resources/Pasted%20image%2020240309111937.png)
+
+![](_resources/Pasted%20image%2020240309111947.png)
+Rotation about arbitrary axis, projections left for iteration-02.
+

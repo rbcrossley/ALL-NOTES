@@ -27,5 +27,19 @@ hugo server
 It'll start a hugo developmental server.
 Hugo's development server automatically reloads files when they change.
 ## Adding another page to the site
-Using Hugo's content generator.
-Page 23
+`hugo new about.md`
+```
++++
+title = 'About'
+date = 2024-03-08T14:27:06+05:45
+draft = true
++++
+```
+This created a file in `content/about.md`.
+This needs different layout. `about.md` is a single page(as per Hugo). So, you need a "single page" layout to display it.
+Hugo won't display the page till `draft=false`.
+# HTML
+Just type `hugo` without any options.
+There will be a directory called `public` which will contain html files.
+![](_resources/Pasted%20image%2020240308143529.png)
+29

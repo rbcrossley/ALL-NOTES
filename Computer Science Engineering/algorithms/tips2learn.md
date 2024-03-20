@@ -1,0 +1,1 @@
+Start with data structures and slowly go towards algorithm, at this stage, it seems I am not ready for algorithms, specially topics concerning recursions. I was stuck badly at quick sort. 
