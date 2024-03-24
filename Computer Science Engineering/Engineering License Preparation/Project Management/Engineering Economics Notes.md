@@ -146,3 +146,6 @@ formulas:
 ## Types of depreciation
 - tax
 - economic
+# effective interest rate from nominal interest rate
+![](_resources/Pasted%20image%2020240322054149.png)
+![](_resources/Pasted%20image%2020240322054120.png)

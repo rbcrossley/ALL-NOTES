@@ -7,8 +7,11 @@
 ![](_resources/Pasted%20image%2020240319153830.png)
 ![](_resources/Pasted%20image%2020240319153839.png)
 
+## Thevenin summarized:
+![](_resources/Pasted%20image%2020240320132100.png)
+![](_resources/Pasted%20image%2020240320132110.png)
 
-Norton's theorem
+# Norton's theorem
 
 References:
 350 Solved Electrical Engineering Problems
